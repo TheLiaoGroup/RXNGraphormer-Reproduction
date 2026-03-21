@@ -1,0 +1,20 @@
+[INFO] Loading trained model from ./model_path/USPTO_480k
+[INFO] Loading test dataset from ./dataset/USPTO_480k
+/mnt/nvme0n1/code/RXNGraphormer/rxngraphormer/model.py:1073: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  memory_lengths = torch.tensor(memory_lengths,
+/home/uniin/anaconda3/envs/rxngraphormer/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [7680], which does not match the required output shape [256, 30]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  ../aten/src/ATen/native/Resize.cpp:17.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+/home/uniin/anaconda3/envs/rxngraphormer/lib/python3.8/site-packages/onmt/translate/beam_search.py:212: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  self._batch_index = self.topk_ids // vocab_size
+/home/uniin/anaconda3/envs/rxngraphormer/lib/python3.8/site-packages/onmt/translate/beam_search.py:209: UserWarning: An output with one or more elements was resized since it had shape [1920], which does not match the required output shape [64, 30]. This behavior is deprecated, and in a future PyTorch release outputs will not be resized unless they have zero elements. You can explicitly reuse an out tensor t by resizing it, inplace, to zero elements with t.resize_(0). (Triggered internally at  ../aten/src/ATen/native/Resize.cpp:17.)
+  torch.mul(self.topk_scores, length_penalty, out=self.topk_log_probs)
+Top-1 Accuracy: 0.9047499895095825
+Top-2 Accuracy: 0.9366999864578247
+Top-3 Accuracy: 0.9443749785423279
+Top-4 Accuracy: 0.9488000273704529
+Top-5 Accuracy: 0.9514999985694885
+Top-6 Accuracy: 0.9534500241279602
+Top-7 Accuracy: 0.95517498254776
+Top-8 Accuracy: 0.9561499953269958
+Top-9 Accuracy: 0.9568750262260437
+Top-10 Accuracy: 0.9575250148773193
