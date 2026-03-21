@@ -611,6 +611,32 @@ Model generalization is validated on newly introduced real-world datasets (e.g.,
   </tr>
 </table>
 
+
+### Non-USPTO Sequence Generation (External Comparison)
+
+To further evaluate generalization in synthesis planning, we compare our reproduced results with those reported in the original paper on non-USPTO datasets.
+
+#### Forward Synthesis
+
+| Setting | Model | Invalid SMILES (%) | Top-1 Acc (with SC) (%) | Top-1 Acc (w/o SC) (%) |
+|--------|--------|--------------------|------------------------|----------------------|
+| Separated | Origin Model | **0.40** | 66.10                  | 66.92                |
+| Separated (USPTO_480k) | RXNGraphormer | 0.75 | **83.34**              | 83.40                |
+| Separated (USPTO_STEREO) | RXNGraphormer | 0.52 | 83.31                  | **85.64**            |
+| Mixed | Origin Model | **0.27** | **84.12**              | 85.20                |
+| Mixed (USPTO_480k) | RXNGraphormer | 0.77 | 83.29                  | 83.35                |
+| Mixed (USPTO_STEREO) | RXNGraphormer | 0.48 | 83.30                  | **85.64**            |
+
+#### Retrosynthesis
+
+| Model                      | Invalid SMILES (%) | Top-1 Acc (with SC) (%) | Top-1 Acc (w/o SC) (%) |
+|----------------------------|--------------------|-------------------------|------------------------|
+| Origin Model               | **0.27**           | **37.22**               | **37.42**              |
+| RXNGraphormer (USPTO_full) | 4.01               | 27.59                   | 28.03                  |
+| RXNGraphormer (USPTO_50k)  | 3.05               | 16.52                   | 16.64                  |
+
+
+
 ## 📚 Acknowledgments
 
 Thanks to the original authors for open-sourcing RXNGraphormer. This reproduction builds directly upon their codebase and methodology.
