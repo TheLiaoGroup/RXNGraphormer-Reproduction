@@ -1,0 +1,90 @@
+2026-03-18 19:18:30,103 | INFO | ==========================================================================
+2026-03-18 19:18:30,105 | INFO | Started Grid Search for 'sulfoxonium_seed68909_parameters'. Total experiments: 4
+2026-03-18 19:18:30,106 | INFO | ==========================================================================
+2026-03-18 19:18:30,107 | INFO | --- Preparing Experiment 0/3 ---
+2026-03-18 19:18:30,108 | INFO | Parameters: {'train_ratio': 0.7, 'valid_ratio': 0.3, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.4, 'batch_size': 32, 'warmup_step': 3000}
+2026-03-18 19:18:30,139 | INFO | Allocated GPU 0 for experiment 0.
+2026-03-18 19:18:30,140 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp0_20260318_191830.json
+2026-03-18 19:18:30,141 | INFO | To reproduce this run manually, use:
+2026-03-18 19:18:30,142 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp0_20260318_191830.json
+2026-03-18 19:18:30,143 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 19:18:30,144 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp0_tr0.7_vr0.3_seed42_lr0.4_bs32_warmup3000_20260318_191830.log
+2026-03-18 20:12:28,925 | INFO | Experiment 0 completed successfully.
+2026-03-18 20:12:28,930 | INFO | Test MAE when got best validation result: 0.07343799620866776, R2: 0.8624370228585657
+2026-03-18 20:12:28,932 | INFO | --- Preparing Experiment 1/3 ---
+2026-03-18 20:12:28,933 | INFO | Parameters: {'train_ratio': 0.7, 'valid_ratio': 0.3, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.4, 'batch_size': 64, 'warmup_step': 3000}
+2026-03-18 20:12:28,967 | INFO | Allocated GPU 0 for experiment 1.
+2026-03-18 20:12:28,968 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp1_20260318_201228.json
+2026-03-18 20:12:28,969 | INFO | To reproduce this run manually, use:
+2026-03-18 20:12:28,970 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp1_20260318_201228.json
+2026-03-18 20:12:28,970 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 20:12:28,971 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp1_tr0.7_vr0.3_seed42_lr0.4_bs64_warmup3000_20260318_201228.log
+2026-03-18 20:20:48,341 | INFO | ==========================================================================
+2026-03-18 20:20:48,341 | INFO | Started Grid Search for 'sulfoxonium_seed68909_parameters'. Total experiments: 4
+2026-03-18 20:20:48,341 | INFO | ==========================================================================
+2026-03-18 20:20:48,341 | INFO | --- Preparing Experiment 0/3 ---
+2026-03-18 20:20:48,341 | INFO | Parameters: {'train_ratio': 0.8, 'valid_ratio': 0.2, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.4, 'batch_size': 32, 'warmup_step': 3000}
+2026-03-18 20:20:48,369 | INFO | All GPUs are busy. Waiting for >1000MB free VRAM...
+2026-03-18 20:58:14,637 | INFO | Experiment 1 completed successfully.
+2026-03-18 20:58:14,642 | INFO | Test MAE when got best validation result: 0.13179442286491394, R2: 0.5866097755293729
+2026-03-18 20:58:14,644 | INFO | --- Preparing Experiment 2/3 ---
+2026-03-18 20:58:14,644 | INFO | Parameters: {'train_ratio': 0.7, 'valid_ratio': 0.3, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.5, 'batch_size': 32, 'warmup_step': 3000}
+2026-03-18 20:58:14,677 | INFO | Allocated GPU 0 for experiment 2.
+2026-03-18 20:58:14,679 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp2_20260318_205814.json
+2026-03-18 20:58:14,679 | INFO | To reproduce this run manually, use:
+2026-03-18 20:58:14,680 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp2_20260318_205814.json
+2026-03-18 20:58:14,681 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 20:58:14,681 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp2_tr0.7_vr0.3_seed42_lr0.5_bs32_warmup3000_20260318_205814.log
+2026-03-18 20:58:22,533 | INFO | GPU 0 is now available!
+2026-03-18 20:58:22,534 | INFO | Allocated GPU 0 for experiment 0.
+2026-03-18 20:58:22,534 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp0_20260318_205822.json
+2026-03-18 20:58:22,534 | INFO | To reproduce this run manually, use:
+2026-03-18 20:58:22,534 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp0_20260318_205822.json
+2026-03-18 20:58:22,534 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 20:58:22,534 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp0_tr0.8_vr0.2_seed42_lr0.4_bs32_warmup3000_20260318_205822.log
+2026-03-18 20:58:29,241 | ERROR | Experiment 0 FAILED. Check './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp0_tr0.8_vr0.2_seed42_lr0.4_bs32_warmup3000_20260318_205822.log' for details.
+2026-03-18 20:58:29,243 | INFO | --- Preparing Experiment 1/3 ---
+2026-03-18 20:58:29,243 | INFO | Parameters: {'train_ratio': 0.8, 'valid_ratio': 0.2, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.4, 'batch_size': 64, 'warmup_step': 3000}
+2026-03-18 20:58:29,275 | INFO | Allocated GPU 0 for experiment 1.
+2026-03-18 20:58:29,275 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp1_20260318_205829.json
+2026-03-18 20:58:29,275 | INFO | To reproduce this run manually, use:
+2026-03-18 20:58:29,275 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp1_20260318_205829.json
+2026-03-18 20:58:29,275 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 20:58:29,275 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp1_tr0.8_vr0.2_seed42_lr0.4_bs64_warmup3000_20260318_205829.log
+2026-03-18 20:58:36,162 | ERROR | Experiment 1 FAILED. Check './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp1_tr0.8_vr0.2_seed42_lr0.4_bs64_warmup3000_20260318_205829.log' for details.
+2026-03-18 20:58:36,163 | INFO | --- Preparing Experiment 2/3 ---
+2026-03-18 20:58:36,164 | INFO | Parameters: {'train_ratio': 0.8, 'valid_ratio': 0.2, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.5, 'batch_size': 32, 'warmup_step': 3000}
+2026-03-18 20:58:36,195 | INFO | Allocated GPU 0 for experiment 2.
+2026-03-18 20:58:36,195 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp2_20260318_205836.json
+2026-03-18 20:58:36,195 | INFO | To reproduce this run manually, use:
+2026-03-18 20:58:36,195 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp2_20260318_205836.json
+2026-03-18 20:58:36,195 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 20:58:36,195 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp2_tr0.8_vr0.2_seed42_lr0.5_bs32_warmup3000_20260318_205836.log
+2026-03-18 20:58:42,882 | ERROR | Experiment 2 FAILED. Check './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp2_tr0.8_vr0.2_seed42_lr0.5_bs32_warmup3000_20260318_205836.log' for details.
+2026-03-18 20:58:42,882 | INFO | --- Preparing Experiment 3/3 ---
+2026-03-18 20:58:42,883 | INFO | Parameters: {'train_ratio': 0.8, 'valid_ratio': 0.2, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.5, 'batch_size': 64, 'warmup_step': 3000}
+2026-03-18 20:58:42,911 | INFO | Allocated GPU 0 for experiment 3.
+2026-03-18 20:58:42,911 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp3_20260318_205842.json
+2026-03-18 20:58:42,911 | INFO | To reproduce this run manually, use:
+2026-03-18 20:58:42,911 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp3_20260318_205842.json
+2026-03-18 20:58:42,911 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 20:58:42,911 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp3_tr0.8_vr0.2_seed42_lr0.5_bs64_warmup3000_20260318_205842.log
+2026-03-18 20:58:49,955 | ERROR | Experiment 3 FAILED. Check './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp3_tr0.8_vr0.2_seed42_lr0.5_bs64_warmup3000_20260318_205842.log' for details.
+2026-03-18 20:58:49,957 | INFO | ==========================================================================
+2026-03-18 20:58:49,957 | INFO | All experiments finished! Check './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/results.csv' for summary.
+2026-03-18 21:49:16,417 | INFO | Experiment 2 completed successfully.
+2026-03-18 21:49:16,423 | INFO | Test MAE when got best validation result: 0.0701611265540123, R2: 0.8768650698643049
+2026-03-18 21:49:16,424 | INFO | --- Preparing Experiment 3/3 ---
+2026-03-18 21:49:16,425 | INFO | Parameters: {'train_ratio': 0.7, 'valid_ratio': 0.3, 'seed': 42, 'tag': 'seed42', 'learning_rate': 0.5, 'batch_size': 64, 'warmup_step': 3000}
+2026-03-18 21:49:16,453 | INFO | All GPUs are busy. Waiting for >1000MB free VRAM...
+2026-03-18 21:49:46,516 | INFO | GPU 0 is now available!
+2026-03-18 21:49:46,519 | INFO | Allocated GPU 0 for experiment 3.
+2026-03-18 21:49:46,520 | INFO | Config file saved at: ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp3_20260318_214946.json
+2026-03-18 21:49:46,521 | INFO | To reproduce this run manually, use:
+2026-03-18 21:49:46,522 | INFO | $  python train_model.py --config_json ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/grid_configs/exp3_20260318_214946.json
+2026-03-18 21:49:46,523 | INFO | To monitor training progress, run in new terminal:
+2026-03-18 21:49:46,523 | INFO | $  tail -f ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/experiment_logs/exp3_tr0.7_vr0.3_seed42_lr0.5_bs64_warmup3000_20260318_214946.log
+2026-03-18 22:34:59,756 | INFO | Experiment 3 completed successfully.
+2026-03-18 22:34:59,761 | INFO | Test MAE when got best validation result: 0.11231861263513565, R2: 0.7214352353243593
+2026-03-18 22:34:59,763 | INFO | ==========================================================================
+2026-03-18 22:34:59,764 | INFO | All experiments finished! Check './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/results.csv' for summary.

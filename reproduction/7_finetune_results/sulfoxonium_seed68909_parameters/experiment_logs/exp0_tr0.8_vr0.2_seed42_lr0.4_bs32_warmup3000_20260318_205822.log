@@ -1,0 +1,44 @@
+/home/zengmj/.conda/envs/rxngraphormer/lib/python3.8/site-packages/torch_geometric/deprecation.py:22: UserWarning: 'nn.glob.GlobalAttention' is deprecated, use 'nn.aggr.AttentionalAggregation' instead
+  warnings.warn(out)
+INFO:root:{'model': {'emb_dim': 256, 'gnn_type': 'gcn', 'gnn_num_layer': 4, 'gnn_aggr': 'mean', 'node_readout': 'mean', 'gnn_jk': 'last', 'graph_pooling': 'attention', 'trans_num_layer': 4, 'trans_readout': 'mean', 'output_num_layer': 1, 'drop_ratio': 0.0, 'save_dir': './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/model_path/exp0_20260318_205822', 'num_heads': 2, 'pretrained_model': '', 'pretrained_model_path': './model_path/pretrained_classification_model', 'pretrained_model_freeze': False, 'pretrained_lr_scaled_coef': 0.95, 'fine_tune': False, 'trainable': '', 'output_norm': 'True', 'split_merge_method': 'rct_pdt', 'output_act_func': 'relu', 'rct_batch_norm': 'True', 'pdt_batch_norm': 'True', 'mid_batch_norm': 'True', 'use_mid_inf': 'True', 'mid_iteract_method': 'fc', 'mid_layer_num': 1}, 'optimizer': {'optimizer': 'AdamW', 'learning_rate': 0.4, 'weight_decay': 0}, 'scheduler': {'lr_decay_step_size': 15, 'lr_decay_factor': 0.8, 'warmup_step': 3000, 'type': 'noamlr'}, 'data': {'data_path': './dataset/Test/Sulfoxonium', 'rct_data_file': 'Sulfoxonium_rct.csv', 'pdt_data_file': 'Sulfoxonium_pdt.csv', 'mid_data_file': 'Sulfoxonium_mech.csv', 'train_rct_data_file': '', 'train_pdt_data_file': '', 'val_rct_data_file': '', 'val_pdt_data_file': '', 'test_rct_data_file': '', 'test_pdt_data_file': '', 'train_mid_data_file': '', 'val_mid_data_file': '', 'test_mid_data_file': '', 'data_trunck': 0, 'batch_size': 32, 'train_ratio': 0.8, 'valid_ratio': 0.2, 'seed': 42, 'multi_process': False, 'radius': 2}, 'training': {'epoch': 600, 'loss': 'l2', 'accum': 1, 'clip_norm': 20.0}, 'others': {'device': 'cuda:0', 'tag': 'seed42'}, 'task': 'regression'}
+{'model': {'emb_dim': 256, 'gnn_type': 'gcn', 'gnn_num_layer': 4, 'gnn_aggr': 'mean', 'node_readout': 'mean', 'gnn_jk': 'last', 'graph_pooling': 'attention', 'trans_num_layer': 4, 'trans_readout': 'mean', 'output_num_layer': 1, 'drop_ratio': 0.0, 'save_dir': './reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/model_path/exp0_20260318_205822', 'num_heads': 2, 'pretrained_model': '', 'pretrained_model_path': './model_path/pretrained_classification_model', 'pretrained_model_freeze': False, 'pretrained_lr_scaled_coef': 0.95, 'fine_tune': False, 'trainable': '', 'output_norm': 'True', 'split_merge_method': 'rct_pdt', 'output_act_func': 'relu', 'rct_batch_norm': 'True', 'pdt_batch_norm': 'True', 'mid_batch_norm': 'True', 'use_mid_inf': 'True', 'mid_iteract_method': 'fc', 'mid_layer_num': 1}, 'optimizer': {'optimizer': 'AdamW', 'learning_rate': 0.4, 'weight_decay': 0}, 'scheduler': {'lr_decay_step_size': 15, 'lr_decay_factor': 0.8, 'warmup_step': 3000, 'type': 'noamlr'}, 'data': {'data_path': './dataset/Test/Sulfoxonium', 'rct_data_file': 'Sulfoxonium_rct.csv', 'pdt_data_file': 'Sulfoxonium_pdt.csv', 'mid_data_file': 'Sulfoxonium_mech.csv', 'train_rct_data_file': '', 'train_pdt_data_file': '', 'val_rct_data_file': '', 'val_pdt_data_file': '', 'test_rct_data_file': '', 'test_pdt_data_file': '', 'train_mid_data_file': '', 'val_mid_data_file': '', 'test_mid_data_file': '', 'data_trunck': 0, 'batch_size': 32, 'train_ratio': 0.8, 'valid_ratio': 0.2, 'seed': 42, 'multi_process': False, 'radius': 2}, 'training': {'epoch': 600, 'loss': 'l2', 'accum': 1, 'clip_norm': 20.0}, 'others': {'device': 'cuda:0', 'tag': 'seed42'}, 'task': 'regression'}
+INFO:root:[INFO] Model parameters: 11 M
+[INFO] Model parameters: 11 M
+INFO:root:[INFO] Use different learning rate for pretrained model
+[INFO] Use different learning rate for pretrained model
+INFO:root:[INFO] Load dataset ./dataset/Test/Sulfoxonium/Sulfoxonium_rct.csv trunck 0...
+[INFO] Load dataset ./dataset/Test/Sulfoxonium/Sulfoxonium_rct.csv trunck 0...
+INFO:root:[INFO] Split dataset into train: 336, valid: 84, test: 84. Random seed: 42
+[INFO] Split dataset into train: 336, valid: 84, test: 84. Random seed: 42
+INFO:root:[INFO] Training results will be saved in ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/model_path/exp0_20260318_205822/Sulfoxonium_rct_mid-seed42_20260318_205824_ft
+[INFO] Training results will be saved in ./reproduction/7_finetune_results/sulfoxonium_seed68909_parameters/model_path/exp0_20260318_205822/Sulfoxonium_rct_mid-seed42_20260318_205824_ft
+INFO:root:============= Epoch 1 =============
+============= Epoch 1 =============
+INFO:root:Training...
+Training...
+Traceback (most recent call last):
+  File "train_model.py", line 26, in <module>
+    main()
+  File "train_model.py", line 24, in main
+    trainer.run()
+  File "/data/ZMJ/code/RXNGraphormer/rxngraphormer/train.py", line 749, in run
+    train_loss = self.train()
+  File "/data/ZMJ/code/RXNGraphormer/rxngraphormer/train.py", line 702, in train
+    out = self.model([rct_data,pdt_data,mid_data])
+  File "/home/zengmj/.conda/envs/rxngraphormer/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/ZMJ/code/RXNGraphormer/rxngraphormer/model.py", line 249, in forward
+    mid_padded_memory_bank,mid_batch,mid_memory_lengths = self.mid_encoder(mid_data)
+  File "/home/zengmj/.conda/envs/rxngraphormer/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/ZMJ/code/RXNGraphormer/rxngraphormer/model.py", line 493, in forward
+    node_representation, mol_index,batch = self.rxn_graph_encoder(x, mol_index, edge_index, edge_attr)
+  File "/home/zengmj/.conda/envs/rxngraphormer/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/ZMJ/code/RXNGraphormer/rxngraphormer/model.py", line 419, in forward
+    h = self.gnns[layer](h_list[layer],edge_index=edge_index,edge_attr=edge_attr)
+  File "/home/zengmj/.conda/envs/rxngraphormer/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/ZMJ/code/RXNGraphormer/rxngraphormer/layer.py", line 79, in forward
+    edge_embeddings = torch.stack(edge_embeddings).mean(dim=0)
+RuntimeError: CUDA out of memory. Tried to allocate 112.00 MiB (GPU 0; 11.75 GiB total capacity; 640.71 MiB already allocated; 59.50 MiB free; 740.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
