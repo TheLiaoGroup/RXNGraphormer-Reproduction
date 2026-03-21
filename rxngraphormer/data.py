@@ -643,7 +643,8 @@ def load_vocab(vocab_file: str):
 def get_token_ids(tokens, vocab, max_len):
     
     token_ids = []
-    token_ids.extend([vocab[token] for token in tokens])
+    # token_ids.extend([vocab[token] for token in tokens]) # token optimization
+    token_ids.extend([vocab.get(token, vocab.get('_UNK', vocab.get('<unk>', 1))) for token in tokens])
     token_ids = token_ids[:max_len-1]
     token_ids.append(vocab["_EOS"])
 
