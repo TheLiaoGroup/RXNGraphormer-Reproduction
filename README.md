@@ -98,8 +98,8 @@ The following table summarizes the performance comparison between the original *
     <td>2.980</td>
     <td>/</td>
     <td>/</td>
-    <td>0.970</td>
-    <td>3.079</td>
+    <td>0.970±0.003</td>
+    <td>3.079±0.144</td>
     <td>/</td>
     <td>/</td>
   </tr>
@@ -109,8 +109,8 @@ The following table summarizes the performance comparison between the original *
     <td>6.300</td>
     <td>/</td>
     <td>/</td>
-    <td>0.871</td>
-    <td>6.430</td>
+    <td>0.871±0.009</td>
+    <td>6.431±0.187</td>
     <td>/</td>
     <td>/</td>
   </tr>
@@ -120,8 +120,8 @@ The following table summarizes the performance comparison between the original *
     <td>0.266</td>
     <td>/</td>
     <td>/</td>
-    <td>0.992</td>
-    <td>0.273</td>
+    <td>0.992±0.001</td>
+    <td>0.273±0.007</td>
     <td>/</td>
     <td>/</td>
   </tr>
@@ -131,8 +131,8 @@ The following table summarizes the performance comparison between the original *
     <td>0.134</td>
     <td>/</td>
     <td>/</td>
-    <td>0.916</td>
-    <td>0.135</td>
+    <td>0.916±0.010</td>
+    <td>0.135±0.007</td>
     <td>/</td>
     <td>/</td>
   </tr>
