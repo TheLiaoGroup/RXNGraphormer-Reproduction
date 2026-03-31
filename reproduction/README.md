@@ -16,7 +16,7 @@ reproduction/
 ├── 4_USPTO.sh                    # USPTO-style dataset training for sequence generation
 ├── 4_uspto/                      # Logs and outputs for USPTO experiments
 ├── 5_SPR.ipynb                   # Structure-performance relationship analysis
-├── 6_experiment_results.ipynb                  # External validation on literature datasets (new work)
+├── 6_experiment_results.ipynb    # External validation on literature datasets (new work)
 ├── 7_finetune_guide.ipynb        # Fine-tuning user guide and example
 ├── finetune_grid_search.py       # Grid search script for fine-tuning
 ├── 7_finetune_results/           # Logs, configs, and results from fine-tuning experiments
