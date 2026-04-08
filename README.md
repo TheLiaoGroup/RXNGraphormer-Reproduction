@@ -9,13 +9,19 @@ This reproduction focuses on validating core functionalities, reaction-type anal
 
 ```
 RXNGraphormer/reproduction/
-├── 1_basic_usage.ipynb           # Basic model usage and embedding generation
-├── 2_Reaction_Type_Visual.ipynb  # Reaction type clustering and visualization (HDBSCAN)
-├── 3_regression.sh               # Script for regression task training (yield, selectivity)
-├── 4_USPTO.sh                    # Script for USPTO-style sequence generation tasks
+├── 1_basic_usage.ipynb           # Core model functionality verification
+├── 2_Reaction_Type_Visual.ipynb  # Reaction type discrimination & clustering (part new work)
+├── 2_ReactionType_Res/           # Saved visualization results for reaction type analysis
+├── 3_regression.sh               # Regression task training script
+├── 3_png/                        # Output figures from regression experiments
+├── 4_USPTO.sh                    # USPTO-style dataset training for sequence generation
+├── 4_uspto/                      # Logs and outputs for USPTO experiments
 ├── 5_SPR.ipynb                   # Structure-performance relationship analysis
-├── 6_test.ipynb                  # External validation on real-world HTE and literature datasets
-└── README.md
+├── 6_experiment_results.ipynb    # External validation on literature datasets (new work)
+├── 7_finetune_guide.ipynb        # Fine-tuning user guide and example
+├── finetune_grid_search.py       # Grid search script for fine-tuning
+├── 7_finetune_results/           # Logs, configs, and results from fine-tuning experiments
+└── README.md                     # Documentation
 ```
 
 ---
